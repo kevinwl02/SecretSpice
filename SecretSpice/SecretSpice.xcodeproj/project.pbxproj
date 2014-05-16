@@ -22,6 +22,8 @@
 		3F83682E1926362F00A60E18 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83682D1926362F00A60E18 /* FBMissingSymbols.m */; };
 		3F83682F1926366500A60E18 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83682A192635C300A60E18 /* Accounts.framework */; };
 		3F8368301926366900A60E18 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F836828192635AF00A60E18 /* Social.framework */; };
+		3F836833192638BE00A60E18 /* SSPCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F836832192638BE00A60E18 /* SSPCheckInViewController.m */; };
+		3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
@@ -55,6 +57,10 @@
 		3F836828192635AF00A60E18 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3F83682A192635C300A60E18 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3F83682D1926362F00A60E18 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBMissingSymbols.m; path = Supporting/FBMissingSymbols.m; sourceTree = "<group>"; };
+		3F836831192638BE00A60E18 /* SSPCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPCheckInViewController.h; path = Controllers/SSPCheckInViewController.h; sourceTree = "<group>"; };
+		3F836832192638BE00A60E18 /* SSPCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPCheckInViewController.m; path = Controllers/SSPCheckInViewController.m; sourceTree = "<group>"; };
+		3F8368341926392900A60E18 /* SSPSecretSpiceAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPSecretSpiceAPIManager.h; path = Managers/SSPSecretSpiceAPIManager.h; sourceTree = "<group>"; };
+		3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPSecretSpiceAPIManager.m; path = Managers/SSPSecretSpiceAPIManager.m; sourceTree = "<group>"; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +218,8 @@
 				3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */,
 				3F83680C19262F1F00A60E18 /* SSPPlaceViewController.h */,
 				3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */,
+				3F836831192638BE00A60E18 /* SSPCheckInViewController.h */,
+				3F836832192638BE00A60E18 /* SSPCheckInViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +229,8 @@
 			children = (
 				3FCD4D4E19261ED4004E898B /* SSPFoursquareAPIManager.h */,
 				3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */,
+				3F8368341926392900A60E18 /* SSPSecretSpiceAPIManager.h */,
+				3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -340,7 +350,9 @@
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
 				3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
+				3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */,
 				3FCD4D5419262103004E898B /* SSPPlace.m in Sources */,
+				3F836833192638BE00A60E18 /* SSPCheckInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

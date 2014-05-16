@@ -64,11 +64,11 @@
 + (instancetype)sharedInstance
 {
     static dispatch_once_t dispatchOnce;
-    static SSPFoursquareAPIManager *reportManager = nil;
+    static SSPFoursquareAPIManager *manager = nil;
     dispatch_once(&dispatchOnce, ^{
-        reportManager = [[self alloc] init];
+        manager = [[self alloc] init];
     });
-    return reportManager;
+    return manager;
 }
 
 - (void)getPlacesWithSearchString:(NSString *)searchString
