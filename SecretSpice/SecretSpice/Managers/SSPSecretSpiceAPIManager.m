@@ -56,7 +56,10 @@
         if (!error) {
             NSMutableArray *people = [NSMutableArray array];
             for (PFObject *parseObject in objects) {
-                [people addObject:[SSPPerson personWithParseObject:parseObject]];
+                NSString *name = [parseObject valueForKey:@"name"];
+                if (![name isEqualToString:USER_NAME]) {
+                    [people addObject:[SSPPerson personWithParseObject:parseObject]];
+                }
             }
             completionBlock([people copy], nil);
         } else {

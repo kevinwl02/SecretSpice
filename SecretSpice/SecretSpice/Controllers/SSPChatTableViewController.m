@@ -57,8 +57,12 @@
     // Configure the cell...
     SSPConversation *conversation = [self.conversations objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = conversation.volunteerName;
-    
+    if ([conversation.volunteerName isEqualToString:USER_NAME]) {
+        cell.textLabel.text = @"My chat room";
+    }
+    else {
+        cell.textLabel.text = conversation.volunteerName;
+    }
     return cell;
 }
 
