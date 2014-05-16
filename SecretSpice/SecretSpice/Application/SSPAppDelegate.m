@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 UIKonf. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SSPAppDelegate.h"
 
-@implementation AppDelegate
+@implementation SSPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
