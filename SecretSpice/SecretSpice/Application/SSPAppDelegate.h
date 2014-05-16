@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PubNub/PubNub.h>
 
-@interface SSPAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SSPAppDelegate : UIResponder <UIApplicationDelegate, PNDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

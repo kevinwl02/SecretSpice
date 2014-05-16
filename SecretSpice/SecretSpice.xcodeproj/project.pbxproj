@@ -174,6 +174,11 @@
 		3FCD4D0C19261674004E898B /* SecretSpice */ = {
 			isa = PBXGroup;
 			children = (
+				0B0B3E3D192644940034FCC0 /* Models */,
+				0B0B3E3619263FB70034FCC0 /* Stores */,
+				0BDC2100192622AB0040FC3F /* Definitions */,
+				0BDC20FB19261F750040FC3F /* Messaging */,
+				0BDC20FC19261F750040FC3F /* ViewControllers */,
 				3FCD4D3519261681004E898B /* Application */,
 				3FCD4D4919261CC4004E898B /* Controllers */,
 				3F836811192634F700A60E18 /* External */,
@@ -466,6 +471,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,6 +490,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

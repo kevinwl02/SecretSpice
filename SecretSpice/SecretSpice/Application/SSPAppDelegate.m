@@ -7,6 +7,11 @@
 //
 
 #import "SSPAppDelegate.h"
+#import "PNMacro.h"
+#import "SSPMessagingHelper.h"
+#import "SSPChatViewController.h"
+#import "SSPChatTableViewController.h"
+#import "SSPUserStore.h"
 
 @implementation SSPAppDelegate
 
