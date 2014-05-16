@@ -9,5 +9,6 @@ pod "PubNub"
 pod "Mantle"
 pod "libextobjc"
 pod "SVProgressHUD"
+pod "TSMessages"
 
 end

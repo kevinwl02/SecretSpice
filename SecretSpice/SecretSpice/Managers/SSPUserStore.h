@@ -15,10 +15,9 @@
 
 @property (nonatomic, strong) NSMutableArray *conversations;
 @property (nonatomic, assign) BOOL isConnectionToMessagingActive;
-@property (nonatomic, strong) NSString *username;
 
 @property (nonatomic, strong) PNChannel *ownChannel;
-@property (nonatomic, strong) SSPConversation *ownConversation;
+@property (nonatomic, assign) BOOL received;
 
 + (instancetype)sharedStore;
 

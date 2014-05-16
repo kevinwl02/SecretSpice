@@ -13,8 +13,8 @@
 #define BASE_URL @"https://api.foursquare.com/v2"
 #define CLIENT_ID @"JFDBI5SDZCMSYM2BOGBL4RMINZK33OVH2NXN4RMG323NLD4V"
 #define CLIENT_SECRET @"4QXEULC5W4UFXCJGU5JV2G0KYNJ5YHBANHMTFCSRJ5VFNZEA"
-#define USER_NAME @"Renzo Crisóstomo"
-#define CHANNEL @"TEST_CHANNEL_1"
+#define USER_NAME @"Kevin Wong"
+//#define USER_NAME @"Renzo Crisóstomo"
 
 typedef void (^ArrayCompletionBlock)(NSArray *array, NSError *error);
 

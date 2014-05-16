@@ -15,6 +15,7 @@
 #import "PNMessage.h"
 #import "SSPConversation.h"
 #import "JSQMessage.h"
+#import "PNChannel.h"
 
 @interface SSPAppDelegate ()
 
@@ -47,14 +48,24 @@
     
     NSDictionary *messageDataDictionary = message.message;
     NSString *sender = [messageDataDictionary valueForKey:@"sender"];
-    NSString *activeUsername = [SSPUserStore sharedStore].username;
+    NSString *messageText = [messageDataDictionary valueForKey:@"message"];
+    NSString *activeUsername = USER_NAME;
+    PNChannel *ownChannel = [SSPUserStore sharedStore].ownChannel;
     
-    if ([sender isEqualToString:activeUsername]) {
-        PNChannel *ownChannel = [SSPUserStore sharedStore].ownChannel;
-        NSString *messageText = [messageDataDictionary valueForKey:@"message"];
-        JSQMessage *message = [[JSQMessage alloc] initWithText:text sender:sender date:date];
-        
-        SSPConversation *conversation = [SSPConversation alloc] initWithVolunteerName:activeUsername channel:ownChannel messages:[NSArray arraywith]
+    if ([sender isEqualToString:activeUsername] && [[ownChannel name] isEqualToString:message.channel.name]
+        && ![[SSPUserStore sharedStore] received]) {
+        JSQMessage *message = [[JSQMessage alloc] initWithText:messageText
+                                                        sender:sender
+                                                          date:[NSDate date]];
+        SSPConversation *conversation = [[SSPConversation alloc]
+                                         initWithVolunteerName:activeUsername
+                                         channel:ownChannel
+                                         messages:@[message].mutableCopy];
+        [[[SSPUserStore sharedStore] conversations] addObject:conversation];
+        [[SSPUserStore sharedStore] setReceived:YES];
+        [TSMessage showNotificationWithTitle:[NSString stringWithFormat:@"Message from %@", sender]
+                                    subtitle:messageText
+                                        type:TSMessageNotificationTypeMessage];
     }
     
 }

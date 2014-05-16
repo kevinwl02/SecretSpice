@@ -80,7 +80,7 @@
                                     outgoingMessageBubbleImageViewWithColor:[UIColor jsq_messageBubbleLightGrayColor]];
     self.receivedMessageBubble = [JSQMessagesBubbleImageFactory
                                   outgoingMessageBubbleImageViewWithColor:[UIColor jsq_messageBubbleBlueColor]];
-    self.sender = [SSPUserStore sharedStore].username;
+    self.sender = USER_NAME;
     
     [self setTextViewEnabled:NO];
 }
@@ -123,6 +123,7 @@
 
 - (void)startConnection {
     
+    [SSPUserStore sharedStore].isConnectionToMessagingActive = YES;
     [SSPMessagingHelper startConnectionWithBlock:^(NSString *origin) {
         
         [self initializeChannelAndView];
