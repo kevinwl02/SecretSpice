@@ -7,20 +7,11 @@
 //
 
 #import "SSPAppDelegate.h"
-#import "SSPFoursquareAPIManager.h"
 
 @implementation SSPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    [[SSPFoursquareAPIManager sharedInstance]
-     getPlacesWithSearchString:@"Berlin"
-     withCompletion:^(NSArray *array, NSError *error) {
-         NSLog(@"%@", array);
-     }];
     return YES;
 }
 

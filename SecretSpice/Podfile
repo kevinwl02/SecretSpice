@@ -5,5 +5,7 @@ target "SecretSpice" do
 
 pod "AFNetworking"
 pod "Mantle"
+pod "libextobjc"
+pod "SVProgressHUD"
 
 end

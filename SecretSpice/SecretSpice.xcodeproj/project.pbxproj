@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */; };
+		3F83681019262FFA00A60E18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83680F19262FFA00A60E18 /* MapKit.framework */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F83680C19262F1F00A60E18 /* SSPPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPlaceViewController.h; path = Controllers/SSPPlaceViewController.h; sourceTree = "<group>"; };
+		3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPlaceViewController.m; path = Controllers/SSPPlaceViewController.m; sourceTree = "<group>"; };
+		3F83680F19262FFA00A60E18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F83681019262FFA00A60E18 /* MapKit.framework in Frameworks */,
 				3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */,
 				3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */,
 				3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */,
@@ -85,6 +91,7 @@
 		3FCD4D0519261674004E898B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F83680F19262FFA00A60E18 /* MapKit.framework */,
 				3FCD4D0619261674004E898B /* Foundation.framework */,
 				3FCD4D0819261674004E898B /* CoreGraphics.framework */,
 				3FCD4D0A19261674004E898B /* UIKit.framework */,
@@ -143,6 +150,8 @@
 			children = (
 				3FCD4D4A19261CEC004E898B /* SSPSearchPlacesViewController.h */,
 				3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */,
+				3F83680C19262F1F00A60E18 /* SSPPlaceViewController.h */,
+				3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */,
 				3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */,
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
+				3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
 				3FCD4D5419262103004E898B /* SSPPlace.m in Sources */,
 			);
