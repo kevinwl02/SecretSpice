@@ -9,6 +9,9 @@
 #import "SSPSecretSpiceAPIManager.h"
 #import "SSPPerson.h"
 #import "SSPPlace.h"
+#import "SSPMessagingHelper.h"
+#import "PNChannel.h"
+#import "SSPUserStore.h"
 
 @implementation SSPSecretSpiceAPIManager
 
@@ -28,11 +31,14 @@
                        type:(SSPCheckInType)checkInType
               andCompletion:(BooleanCompletionBlock)completionBlock
 {
+    PNChannel *channel = [SSPMessagingHelper createChannelUserName:USER_NAME];
+    [SSPUserStore sharedStore].ownChannel = channel;
+    
     PFObject *activeSession = [PFObject objectWithClassName:@"ActiveSession"];
     activeSession[@"userName"] = USER_NAME;
     activeSession[@"latitude"] = [NSNumber numberWithDouble:location.latitude];
     activeSession[@"longitude"] = [NSNumber numberWithDouble:location.longitude];
-    activeSession[@"channel"] = CHANNEL;
+    activeSession[@"channel"] = channel.name;
     activeSession[@"checkInType"] = [NSNumber numberWithInt:checkInType];
     [activeSession saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         completionBlock(succeeded, error);

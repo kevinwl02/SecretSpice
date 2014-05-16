@@ -12,13 +12,14 @@
 #import "PNConfiguration.h"
 #import "PNObservationCenter.h"
 #import "PNError.h"
+#import "PNMessage.h"
 
 @implementation SSPMessagingHelper
 
-+ (PNChannel *)createChannel {
++ (PNChannel *)createChannelUserName:(NSString *)username {
     
-    NSString *channelName = TEST_CHANNEL_NAME;
-    PNChannel *channel = [SSPMessagingHelper subscribeToChannelName:channelName];
+    NSString *channelName = [NSString stringWithFormat:@"%@.%@", username, CHANNEL_NAME];
+    PNChannel *channel = [self subscribeToChannelName:channelName];
     
     return channel;
 }

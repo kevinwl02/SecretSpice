@@ -9,7 +9,7 @@
 #define SUBSCRIBE_KEY @"sub-c-a5b367b0-dc63-11e3-97df-02ee2ddab7fe"
 #define PUBLISH_KEY @"pub-c-f217998d-9a27-4309-b23b-29b34cf7dfa5"
 #define SECRET_KEY @"sec-c-MWFmMDM4MDktODYzMy00ZGZmLWI0YTAtOWIyN2VlMWQ5Njg3"
-#define TEST_CHANNEL_NAME @"org.secretspice.uikonf.testchannel"
+#define CHANNEL_NAME @"org.secretspice.uikonf.testchannel"
 #define BASE_URL @"https://api.foursquare.com/v2"
 #define CLIENT_ID @"JFDBI5SDZCMSYM2BOGBL4RMINZK33OVH2NXN4RMG323NLD4V"
 #define CLIENT_SECRET @"4QXEULC5W4UFXCJGU5JV2G0KYNJ5YHBANHMTFCSRJ5VFNZEA"

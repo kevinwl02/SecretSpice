@@ -12,6 +12,9 @@
 #import "SSPChatViewController.h"
 #import "SSPChatTableViewController.h"
 #import "SSPUserStore.h"
+#import "PNMessage.h"
+#import "SSPConversation.h"
+#import "JSQMessage.h"
 
 @interface SSPAppDelegate ()
 
@@ -41,6 +44,19 @@
 - (void)pubnubClient:(PubNub *)client
    didReceiveMessage:(PNMessage *)message {
     PNLog(PNLogGeneralLevel,self,@"PubNub client received message: %@", message);
+    
+    NSDictionary *messageDataDictionary = message.message;
+    NSString *sender = [messageDataDictionary valueForKey:@"sender"];
+    NSString *activeUsername = [SSPUserStore sharedStore].username;
+    
+    if ([sender isEqualToString:activeUsername]) {
+        PNChannel *ownChannel = [SSPUserStore sharedStore].ownChannel;
+        NSString *messageText = [messageDataDictionary valueForKey:@"message"];
+        JSQMessage *message = [[JSQMessage alloc] initWithText:text sender:sender date:date];
+        
+        SSPConversation *conversation = [SSPConversation alloc] initWithVolunteerName:activeUsername channel:ownChannel messages:[NSArray arraywith]
+    }
+    
 }
 
 

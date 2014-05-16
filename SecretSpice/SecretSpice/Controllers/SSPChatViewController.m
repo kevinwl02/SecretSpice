@@ -105,13 +105,6 @@
 
 #pragma mark - Channel connection
 
-- (void)setupChannel {
-    
-    self.currentChannel = [SSPMessagingHelper createChannel];
-    
-    [self addConversationToStore];
-}
-
 - (void)subscribeToVolunteer: (id)volunteer {
     
     self.currentChannel = [SSPMessagingHelper subscribeToChannelName:self.volunteer.channel];
@@ -121,10 +114,6 @@
 - (void)addConversationToStore {
     
     NSString *volunteerName = self.volunteer.name;
-    if (self.volunteer)
-        volunteerName = @"Volunteer";
-    else
-        volunteerName = self.sender;
     
     self.title = volunteerName;
     
@@ -146,12 +135,7 @@
 - (void)initializeChannelAndView {
     
     if (!self.currentChannel) {
-        if (!self.volunteer) {
-            [self setupChannel];
-        }
-        else {
-            [self subscribeToVolunteer:self.volunteer];
-        }
+        [self subscribeToVolunteer:self.volunteer];
     }
     [self setTextViewEnabled:YES];
 }
@@ -188,7 +172,6 @@
     NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
     [SSPMessagingHelper sendMessage:stringData ToChannel:self.currentChannel andCompletionBlock:^(PNMessageState messageState, id error) {
-        NSLog (@"%d", messageState);
     }];
 }
 
@@ -199,13 +182,6 @@
                     sender:(NSString *)sender
                       date:(NSDate *)date
 {
-    /**
-     *  Sending a message. Your implementation of this method should do *at least* the following:
-     *
-     *  1. Play sound (optional)
-     *  2. Add new id<JSQMessageData> object to your data source
-     *  3. Call `finishSendingMessage`
-     */
     [self sendMessage:text];
 }
 

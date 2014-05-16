@@ -15,7 +15,7 @@
 
 @interface SSPMessagingHelper : NSObject
 
-+ (PNChannel *)createChannel;
++ (PNChannel *)createChannelUserName:(NSString *)username;
 + (void)setupConfiguration;
 + (PNChannel *)subscribeToChannelName: (NSString *)channelName;
 + (void)sendMessage:(id)message ToChannel:(PNChannel *)channel andCompletionBlock:(PNClientMessageProcessingBlock)completionBlock;
