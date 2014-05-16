@@ -52,7 +52,7 @@
     NSString *activeUsername = USER_NAME;
     PNChannel *ownChannel = [SSPUserStore sharedStore].ownChannel;
     
-    if ([sender isEqualToString:activeUsername] && [[ownChannel name] isEqualToString:message.channel.name]
+    if ([[ownChannel name] isEqualToString:message.channel.name]
         && ![[SSPUserStore sharedStore] received]) {
         JSQMessage *message = [[JSQMessage alloc] initWithText:messageText
                                                         sender:sender

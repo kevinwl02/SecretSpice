@@ -9,6 +9,8 @@
 #import "SSPCheckInViewController.h"
 #import "SSPSecretSpiceAPIManager.h"
 #import "SSPChatTableViewController.h"
+#import "SSPUserStore.h"
+#import "SSPMessagingHelper.h"
 
 @interface SSPCheckInViewController () <CLLocationManagerDelegate>
 
@@ -16,6 +18,8 @@
 @property (nonatomic, strong) CLLocation *currentLocation;
 
 - (BOOL)isCurrentLocationValid;
+- (void)startCheckIn;
+- (void)startConnectionWithCompletionBlock:(BooleanCompletionBlock)completionBlock;
 
 @end
 
@@ -49,18 +53,35 @@
     return YES;
 }
 
-#pragma mark - Public Methods
-
-- (IBAction)onTouchUpInsideCheckInButton:(id)sender
+- (void)startCheckIn
 {
-    if ([self isCurrentLocationValid]) {
-        [SVProgressHUD show];
+    [SVProgressHUD show];
+    [self startConnectionWithCompletionBlock:^(BOOL result, NSError *error) {
         [[SSPSecretSpiceAPIManager sharedInstance]
          checkInWithLocation:self.currentLocation.coordinate
          type:self.sgtCtrlCheckInType.selectedSegmentIndex == 1 ? SSPCheckInType15Min : SSPCheckInType30Min
          andCompletion:^(BOOL result, NSError *error) {
              [SVProgressHUD dismiss];
          }];
+    }];
+}
+
+- (void)startConnectionWithCompletionBlock:(BooleanCompletionBlock)completionBlock
+{
+    [SSPUserStore sharedStore].isConnectionToMessagingActive = YES;
+    [SSPMessagingHelper startConnectionWithBlock:^(NSString *origin) {
+        completionBlock(YES, nil);
+    } errorBlock:^(PNError *connectionError) {
+        completionBlock(NO, nil);
+    }];
+}
+
+#pragma mark - Public Methods
+
+- (IBAction)onTouchUpInsideCheckInButton:(id)sender
+{
+    if ([self isCurrentLocationValid]) {
+        [self startCheckIn];
     }
     else {
         self.currentLocation = nil;
@@ -83,13 +104,7 @@
     if (self.currentLocation == nil) {
         [self.locationManager stopUpdatingLocation];
         self.currentLocation = [locations lastObject];
-        [SVProgressHUD show];
-        [[SSPSecretSpiceAPIManager sharedInstance]
-         checkInWithLocation:self.currentLocation.coordinate
-         type:self.sgtCtrlCheckInType.selectedSegmentIndex == 1 ? SSPCheckInType15Min : SSPCheckInType30Min
-         andCompletion:^(BOOL result, NSError *error) {
-             [SVProgressHUD dismiss];
-         }];
+        [self startCheckIn];
     }
 }
 

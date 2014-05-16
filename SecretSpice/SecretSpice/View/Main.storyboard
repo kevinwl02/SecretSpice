@@ -175,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-YY-ACE">
-                                <rect key="frame" x="20" y="20" width="280" height="29"/>
+                                <rect key="frame" x="20" y="349" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="15 min"/>
@@ -183,7 +183,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJk-vg-Q1L">
-                                <rect key="frame" x="20" y="56" width="280" height="30"/>
+                                <rect key="frame" x="20" y="385" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Check-in">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,12 +192,20 @@
                                     <action selector="onTouchUpInsideCheckInButton:" destination="eqb-cz-hGG" eventType="touchUpInside" id="Kj6-G7-LXQ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vLl-ty-nXr">
+                                <rect key="frame" x="35" y="89" width="250" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Check-in" id="53t-TY-T8B">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ogf-Iv-SFD"/>
-                        <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw"/>
+                        <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw">
+                            <connections>
+                                <action selector="onTouchUpInsideChatsButton:" destination="eqb-cz-hGG" id="8U2-C1-5e2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="XAK-rm-zeb">
                             <connections>
                                 <segue destination="RaR-su-zyv" kind="push" id="Qa1-Md-ZQj"/>
@@ -210,6 +218,9 @@
             <point key="canvasLocation" x="921" y="814"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="250" height="242"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
