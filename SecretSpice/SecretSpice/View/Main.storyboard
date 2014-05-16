@@ -197,7 +197,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Check-in" id="53t-TY-T8B">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ogf-Iv-SFD"/>
-                        <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw"/>
+                        <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw">
+                            <connections>
+                                <action selector="onTouchUpInsideChatsButton:" destination="eqb-cz-hGG" id="8U2-C1-5e2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="XAK-rm-zeb">
                             <connections>
                                 <segue destination="RaR-su-zyv" kind="push" id="Qa1-Md-ZQj"/>

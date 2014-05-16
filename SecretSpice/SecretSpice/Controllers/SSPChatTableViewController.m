@@ -32,10 +32,6 @@
 {
     [super viewDidLoad];
     self.conversations = [SSPUserStore sharedStore].conversations;
-    if (self.conversations.count == 0) {
-        SSPChatViewController *chatViewController = [[SSPChatViewController alloc] init];
-        [self.navigationController pushViewController:chatViewController animated:YES];
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
