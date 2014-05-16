@@ -8,6 +8,7 @@
 
 #import "SSPCheckInViewController.h"
 #import "SSPSecretSpiceAPIManager.h"
+#import "SSPChatTableViewController.h"
 
 @interface SSPCheckInViewController () <CLLocationManagerDelegate>
 
@@ -65,6 +66,13 @@
         self.currentLocation = nil;
         [self.locationManager startUpdatingLocation];
     }
+}
+
+- (IBAction)onTouchUpInsideChatsButton:(id)sender
+{
+    SSPChatTableViewController *viewController = [[SSPChatTableViewController alloc] init];
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
 }
 
 #pragma mark - CLLocationManagerDelegate

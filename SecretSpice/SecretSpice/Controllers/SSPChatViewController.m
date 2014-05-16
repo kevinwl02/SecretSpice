@@ -23,13 +23,14 @@
 #import "PNDate.h"
 #import "SSPUserStore.h"
 #import "SSPConversation.h"
+#import "SSPPerson.h"
 
 @interface SSPChatViewController ()
 
 @property (nonatomic, strong) NSMutableArray *messages;
 @property (nonatomic, strong) UIImageView *sentMessageBubble;
 @property (nonatomic, strong) UIImageView *receivedMessageBubble;
-@property (nonatomic, copy) id volunteer;
+@property (nonatomic, strong) SSPPerson *volunteer;
 @property (nonatomic, strong) PNChannel *currentChannel;
 
 @end
@@ -113,14 +114,13 @@
 
 - (void)subscribeToVolunteer: (id)volunteer {
     
-    self.currentChannel = [SSPMessagingHelper subscribeToChannelName:TEST_CHANNEL_NAME];
+    self.currentChannel = [SSPMessagingHelper subscribeToChannelName:self.volunteer.channel];
     [self addConversationToStore];
 }
 
 - (void)addConversationToStore {
     
-    //TODO: Volunteer name
-    NSString *volunteerName = @"";
+    NSString *volunteerName = self.volunteer.name;
     if (self.volunteer)
         volunteerName = @"Volunteer";
     else

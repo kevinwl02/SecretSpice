@@ -10,10 +10,11 @@
 
 @class PNChannel;
 @class SSPConversation;
+@class SSPPerson;
 
 @interface SSPChatViewController : JSQMessagesViewController
 
-- (instancetype)initWithSelectedVolunteer:(id)volunteer;
+- (instancetype)initWithSelectedVolunteer:(SSPPerson *)volunteer;
 - (instancetype)initWithConversation:(SSPConversation *)conversation;
 
 @end

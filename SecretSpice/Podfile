@@ -4,6 +4,8 @@
 target "SecretSpice" do
 
 pod "AFNetworking"
+pod "JSQMessagesViewController"
+pod "PubNub"
 pod "Mantle"
 pod "libextobjc"
 pod "SVProgressHUD"

@@ -18,6 +18,9 @@ PODS:
   - AFNetworking/UIKit (2.2.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - JSQMessagesViewController (5.0.1):
+    - JSQSystemSoundPlayer
+  - JSQSystemSoundPlayer (1.5.0)
   - libextobjc (0.4):
     - libextobjc/EXTADT
     - libextobjc/EXTConcreteProtocol
@@ -56,18 +59,24 @@ PODS:
   - Mantle (1.4.1):
     - Mantle/extobjc
   - Mantle/extobjc (1.4.1)
+  - PubNub (3.6.1)
   - SVProgressHUD (1.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - JSQMessagesViewController
   - libextobjc
   - Mantle
+  - PubNub
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
+  JSQMessagesViewController: 11aaf450f5ffe88102b7a24c8ef1475fabcd7a88
+  JSQSystemSoundPlayer: 6dbac8dcc33e3add6facb3e59451a0249aece17d
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
   Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
+  PubNub: 617df10280cca88551f12f5e9a0f4a48fd27272e
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
 
 COCOAPODS: 0.32.1

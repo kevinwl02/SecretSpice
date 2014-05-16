@@ -26,6 +26,11 @@
 		3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */; };
 		3F8368391926481C00A60E18 /* SSPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8368381926481C00A60E18 /* SSPPerson.m */; };
 		3F83683C1926493D00A60E18 /* SSPPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83683B1926493D00A60E18 /* SSPPeopleViewController.m */; };
+		3F87E3ED192652B300866D89 /* SSPChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87E3EA192652B300866D89 /* SSPChatTableViewController.m */; };
+		3F87E3EE192652B300866D89 /* SSPChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87E3EC192652B300866D89 /* SSPChatViewController.m */; };
+		3F87E3F1192652C200866D89 /* SSPUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87E3F0192652C200866D89 /* SSPUserStore.m */; };
+		3F87E3F4192652CD00866D89 /* SSPConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87E3F3192652CD00866D89 /* SSPConversation.m */; };
+		3F87E3F81926557500866D89 /* SSPMessagingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87E3F71926557500866D89 /* SSPMessagingHelper.m */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
@@ -33,7 +38,6 @@
 		3FCD4D3B192616B1004E898B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D37192616B1004E898B /* main.m */; };
 		3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D3E192616BA004E898B /* SSPAppDelegate.m */; };
 		3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D42192616C2004E898B /* InfoPlist.strings */; };
-		3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D44192617C5004E898B /* Chat.storyboard */; };
 		3FCD4D4719261807004E898B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4619261807004E898B /* Main.storyboard */; };
 		3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */; };
 		3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */; };
@@ -67,6 +71,17 @@
 		3F8368381926481C00A60E18 /* SSPPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPerson.m; path = Models/SSPPerson.m; sourceTree = "<group>"; };
 		3F83683A1926493D00A60E18 /* SSPPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPeopleViewController.h; path = Controllers/SSPPeopleViewController.h; sourceTree = "<group>"; };
 		3F83683B1926493D00A60E18 /* SSPPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPeopleViewController.m; path = Controllers/SSPPeopleViewController.m; sourceTree = "<group>"; };
+		3F87E3E8192652AC00866D89 /* SSPDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPDefinitions.h; path = Definitions/SSPDefinitions.h; sourceTree = "<group>"; };
+		3F87E3E9192652B300866D89 /* SSPChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPChatTableViewController.h; path = Controllers/SSPChatTableViewController.h; sourceTree = "<group>"; };
+		3F87E3EA192652B300866D89 /* SSPChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPChatTableViewController.m; path = Controllers/SSPChatTableViewController.m; sourceTree = "<group>"; };
+		3F87E3EB192652B300866D89 /* SSPChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPChatViewController.h; path = Controllers/SSPChatViewController.h; sourceTree = "<group>"; };
+		3F87E3EC192652B300866D89 /* SSPChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPChatViewController.m; path = Controllers/SSPChatViewController.m; sourceTree = "<group>"; };
+		3F87E3EF192652C200866D89 /* SSPUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPUserStore.h; path = Managers/SSPUserStore.h; sourceTree = "<group>"; };
+		3F87E3F0192652C200866D89 /* SSPUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPUserStore.m; path = Managers/SSPUserStore.m; sourceTree = "<group>"; };
+		3F87E3F2192652CD00866D89 /* SSPConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPConversation.h; path = Models/SSPConversation.h; sourceTree = "<group>"; };
+		3F87E3F3192652CD00866D89 /* SSPConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPConversation.m; path = Models/SSPConversation.m; sourceTree = "<group>"; };
+		3F87E3F61926557500866D89 /* SSPMessagingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPMessagingHelper.h; path = Helpers/SSPMessagingHelper.h; sourceTree = "<group>"; };
+		3F87E3F71926557500866D89 /* SSPMessagingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPMessagingHelper.m; path = Helpers/SSPMessagingHelper.m; sourceTree = "<group>"; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,7 +94,6 @@
 		3FCD4D3D192616BA004E898B /* SSPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPAppDelegate.h; path = Application/SSPAppDelegate.h; sourceTree = "<group>"; };
 		3FCD4D3E192616BA004E898B /* SSPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPAppDelegate.m; path = Application/SSPAppDelegate.m; sourceTree = "<group>"; };
 		3FCD4D41192616C2004E898B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3FCD4D44192617C5004E898B /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Chat.storyboard; path = View/Chat.storyboard; sourceTree = "<group>"; };
 		3FCD4D4619261807004E898B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = "<group>"; };
 		3FCD4D4A19261CEC004E898B /* SSPSearchPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPSearchPlacesViewController.h; path = Controllers/SSPSearchPlacesViewController.h; sourceTree = "<group>"; };
 		3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPSearchPlacesViewController.m; path = Controllers/SSPSearchPlacesViewController.m; sourceTree = "<group>"; };
@@ -87,7 +101,6 @@
 		3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPFoursquareAPIManager.m; path = Managers/SSPFoursquareAPIManager.m; sourceTree = "<group>"; };
 		3FCD4D5219262103004E898B /* SSPPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPlace.h; path = Models/SSPPlace.h; sourceTree = "<group>"; };
 		3FCD4D5319262103004E898B /* SSPPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPlace.m; path = Models/SSPPlace.m; sourceTree = "<group>"; };
-		3FCD4D59192623F4004E898B /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Definitions.h; path = Supporting/Definitions.h; sourceTree = "<group>"; };
 		E6D3E3ED8F924CE0A5CC115C /* Pods-SecretSpice.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSpice.xcconfig"; path = "Pods/Pods-SecretSpice.xcconfig"; sourceTree = "<group>"; };
 		FC8C563F63284377B3B969D4 /* libPods-SecretSpice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretSpice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +139,23 @@
 				3F8368121926351800A60E18 /* Parse.framework */,
 			);
 			name = External;
+			sourceTree = "<group>";
+		};
+		3F87E3E71926529D00866D89 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				3F87E3E8192652AC00866D89 /* SSPDefinitions.h */,
+			);
+			name = Definitions;
+			sourceTree = "<group>";
+		};
+		3F87E3F51926556600866D89 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F87E3F61926557500866D89 /* SSPMessagingHelper.h */,
+				3F87E3F71926557500866D89 /* SSPMessagingHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		3FCD4CFA19261674004E898B = {
@@ -174,13 +204,10 @@
 		3FCD4D0C19261674004E898B /* SecretSpice */ = {
 			isa = PBXGroup;
 			children = (
-				0B0B3E3D192644940034FCC0 /* Models */,
-				0B0B3E3619263FB70034FCC0 /* Stores */,
-				0BDC2100192622AB0040FC3F /* Definitions */,
-				0BDC20FB19261F750040FC3F /* Messaging */,
-				0BDC20FC19261F750040FC3F /* ViewControllers */,
 				3FCD4D3519261681004E898B /* Application */,
 				3FCD4D4919261CC4004E898B /* Controllers */,
+				3F87E3E71926529D00866D89 /* Definitions */,
+				3F87E3F51926556600866D89 /* Helpers */,
 				3F836811192634F700A60E18 /* External */,
 				3FCD4D4D19261D89004E898B /* Managers */,
 				3FCD4D51192620E4004E898B /* Models */,
@@ -198,7 +225,6 @@
 				3FCD4D37192616B1004E898B /* main.m */,
 				3FCD4D38192616B1004E898B /* SecretSpice-Info.plist */,
 				3FCD4D39192616B1004E898B /* SecretSpice-Prefix.pch */,
-				3FCD4D59192623F4004E898B /* Definitions.h */,
 				3F83682D1926362F00A60E18 /* FBMissingSymbols.m */,
 			);
 			name = Supporting;
@@ -217,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				3FCD4D4619261807004E898B /* Main.storyboard */,
-				3FCD4D44192617C5004E898B /* Chat.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -225,6 +250,10 @@
 		3FCD4D4919261CC4004E898B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F87E3E9192652B300866D89 /* SSPChatTableViewController.h */,
+				3F87E3EA192652B300866D89 /* SSPChatTableViewController.m */,
+				3F87E3EB192652B300866D89 /* SSPChatViewController.h */,
+				3F87E3EC192652B300866D89 /* SSPChatViewController.m */,
 				3FCD4D4A19261CEC004E898B /* SSPSearchPlacesViewController.h */,
 				3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */,
 				3F83680C19262F1F00A60E18 /* SSPPlaceViewController.h */,
@@ -240,6 +269,8 @@
 		3FCD4D4D19261D89004E898B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				3F87E3EF192652C200866D89 /* SSPUserStore.h */,
+				3F87E3F0192652C200866D89 /* SSPUserStore.m */,
 				3FCD4D4E19261ED4004E898B /* SSPFoursquareAPIManager.h */,
 				3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */,
 				3F8368341926392900A60E18 /* SSPSecretSpiceAPIManager.h */,
@@ -251,6 +282,8 @@
 		3FCD4D51192620E4004E898B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F87E3F2192652CD00866D89 /* SSPConversation.h */,
+				3F87E3F3192652CD00866D89 /* SSPConversation.m */,
 				3FCD4D5219262103004E898B /* SSPPlace.h */,
 				3FCD4D5319262103004E898B /* SSPPlace.m */,
 				3F8368371926481C00A60E18 /* SSPPerson.h */,
@@ -313,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD4D4719261807004E898B /* Main.storyboard in Resources */,
-				3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */,
 				3FCD4D1919261674004E898B /* Images.xcassets in Resources */,
 				3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */,
 			);
@@ -360,13 +392,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */,
+				3F87E3EE192652B300866D89 /* SSPChatViewController.m in Sources */,
 				3F83682E1926362F00A60E18 /* FBMissingSymbols.m in Sources */,
+				3F87E3F81926557500866D89 /* SSPMessagingHelper.m in Sources */,
 				3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */,
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
+				3F87E3ED192652B300866D89 /* SSPChatTableViewController.m in Sources */,
 				3F83683C1926493D00A60E18 /* SSPPeopleViewController.m in Sources */,
+				3F87E3F1192652C200866D89 /* SSPUserStore.m in Sources */,
 				3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
 				3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */,
+				3F87E3F4192652CD00866D89 /* SSPConversation.m in Sources */,
 				3F8368391926481C00A60E18 /* SSPPerson.m in Sources */,
 				3FCD4D5419262103004E898B /* SSPPlace.m in Sources */,
 				3F836833192638BE00A60E18 /* SSPCheckInViewController.m in Sources */,

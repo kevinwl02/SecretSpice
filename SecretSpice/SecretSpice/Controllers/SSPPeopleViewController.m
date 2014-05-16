@@ -10,6 +10,7 @@
 #import "SSPSecretSpiceAPIManager.h"
 #import "SSPPlace.h"
 #import "SSPPerson.h"
+#import "SSPChatViewController.h"
 
 @interface SSPPeopleViewController ()
 
@@ -65,6 +66,17 @@
     SSPPerson *person = self.dataSource[indexPath.row];
     [cell.textLabel setText:person.name];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SSPPerson *person = self.dataSource[indexPath.row];
+    SSPChatViewController *viewController = [[SSPChatViewController alloc]
+                                             initWithSelectedVolunteer:person];
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
 }
 
 @end

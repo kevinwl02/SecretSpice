@@ -162,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="307" y="814"/>
         </scene>
-        <!--Check In View Controller - Secret Spice-->
+        <!--Check In View Controller - Check-in-->
         <scene sceneID="OD5-rW-TOy">
             <objects>
                 <viewController id="eqb-cz-hGG" customClass="SSPCheckInViewController" sceneMemberID="viewController">
@@ -195,7 +195,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Secret Spice" id="53t-TY-T8B">
+                    <navigationItem key="navigationItem" title="Check-in" id="53t-TY-T8B">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ogf-Iv-SFD"/>
                         <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw"/>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="XAK-rm-zeb">

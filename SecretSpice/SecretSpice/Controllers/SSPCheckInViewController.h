@@ -13,5 +13,6 @@
 @property (nonatomic, weak) IBOutlet UISegmentedControl *sgtCtrlCheckInType;
 
 - (IBAction)onTouchUpInsideCheckInButton:(id)sender;
+- (IBAction)onTouchUpInsideChatsButton:(id)sender;
 
 @end
