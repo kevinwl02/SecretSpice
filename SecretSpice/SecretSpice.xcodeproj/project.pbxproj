@@ -17,6 +17,9 @@
 		3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D42192616C2004E898B /* InfoPlist.strings */; };
 		3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D44192617C5004E898B /* Chat.storyboard */; };
 		3FCD4D4719261807004E898B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4619261807004E898B /* Main.storyboard */; };
+		3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */; };
+		3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */; };
+		3FCD4D5419262103004E898B /* SSPPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D5319262103004E898B /* SSPPlace.m */; };
 		6D792410BBBB4B8BB06C750F /* libPods-SecretSpice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8C563F63284377B3B969D4 /* libPods-SecretSpice.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,13 @@
 		3FCD4D41192616C2004E898B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FCD4D44192617C5004E898B /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Chat.storyboard; path = View/Chat.storyboard; sourceTree = "<group>"; };
 		3FCD4D4619261807004E898B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = "<group>"; };
+		3FCD4D4A19261CEC004E898B /* SSPSearchPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPSearchPlacesViewController.h; path = Controllers/SSPSearchPlacesViewController.h; sourceTree = "<group>"; };
+		3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPSearchPlacesViewController.m; path = Controllers/SSPSearchPlacesViewController.m; sourceTree = "<group>"; };
+		3FCD4D4E19261ED4004E898B /* SSPFoursquareAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPFoursquareAPIManager.h; path = Managers/SSPFoursquareAPIManager.h; sourceTree = "<group>"; };
+		3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPFoursquareAPIManager.m; path = Managers/SSPFoursquareAPIManager.m; sourceTree = "<group>"; };
+		3FCD4D5219262103004E898B /* SSPPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPlace.h; path = Models/SSPPlace.h; sourceTree = "<group>"; };
+		3FCD4D5319262103004E898B /* SSPPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPlace.m; path = Models/SSPPlace.m; sourceTree = "<group>"; };
+		3FCD4D59192623F4004E898B /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Definitions.h; path = Supporting/Definitions.h; sourceTree = "<group>"; };
 		E6D3E3ED8F924CE0A5CC115C /* Pods-SecretSpice.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSpice.xcconfig"; path = "Pods/Pods-SecretSpice.xcconfig"; sourceTree = "<group>"; };
 		FC8C563F63284377B3B969D4 /* libPods-SecretSpice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretSpice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				3FCD4D3519261681004E898B /* Application */,
+				3FCD4D4919261CC4004E898B /* Controllers */,
+				3FCD4D4D19261D89004E898B /* Managers */,
+				3FCD4D51192620E4004E898B /* Models */,
 				3FCD4D1819261674004E898B /* Images.xcassets */,
 				3FCD4D0D19261674004E898B /* Supporting */,
 				3FCD4D43192617A8004E898B /* View */,
@@ -102,6 +115,7 @@
 				3FCD4D37192616B1004E898B /* main.m */,
 				3FCD4D38192616B1004E898B /* SecretSpice-Info.plist */,
 				3FCD4D39192616B1004E898B /* SecretSpice-Prefix.pch */,
+				3FCD4D59192623F4004E898B /* Definitions.h */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -122,6 +136,33 @@
 				3FCD4D44192617C5004E898B /* Chat.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3FCD4D4919261CC4004E898B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD4D4A19261CEC004E898B /* SSPSearchPlacesViewController.h */,
+				3FCD4D4B19261CEC004E898B /* SSPSearchPlacesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3FCD4D4D19261D89004E898B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD4D4E19261ED4004E898B /* SSPFoursquareAPIManager.h */,
+				3FCD4D4F19261ED4004E898B /* SSPFoursquareAPIManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		3FCD4D51192620E4004E898B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD4D5219262103004E898B /* SSPPlace.h */,
+				3FCD4D5319262103004E898B /* SSPPlace.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */,
+				3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */,
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
+				3FCD4D5419262103004E898B /* SSPPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
