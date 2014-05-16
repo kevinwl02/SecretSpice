@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */; };
 		3F83681019262FFA00A60E18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83680F19262FFA00A60E18 /* MapKit.framework */; };
+		3F8368131926351800A60E18 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368121926351800A60E18 /* Parse.framework */; };
+		3F8368151926354D00A60E18 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368141926354D00A60E18 /* AudioToolbox.framework */; };
+		3F8368171926355400A60E18 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368161926355400A60E18 /* CFNetwork.framework */; };
+		3F8368191926356000A60E18 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368181926356000A60E18 /* CoreLocation.framework */; };
+		3F83681B1926356B00A60E18 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83681A1926356B00A60E18 /* libz.dylib */; };
+		3F83681D1926357400A60E18 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83681C1926357400A60E18 /* MobileCoreServices.framework */; };
+		3F83681F1926357C00A60E18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83681E1926357C00A60E18 /* QuartzCore.framework */; };
+		3F8368211926358300A60E18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368201926358300A60E18 /* Security.framework */; };
+		3F8368231926358A00A60E18 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368221926358A00A60E18 /* StoreKit.framework */; };
+		3F8368251926359100A60E18 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8368241926359100A60E18 /* SystemConfiguration.framework */; };
+		3F83682E1926362F00A60E18 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83682D1926362F00A60E18 /* FBMissingSymbols.m */; };
+		3F83682F1926366500A60E18 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F83682A192635C300A60E18 /* Accounts.framework */; };
+		3F8368301926366900A60E18 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F836828192635AF00A60E18 /* Social.framework */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
 		3FCD4D1919261674004E898B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D1819261674004E898B /* Images.xcassets */; };
 		3FCD4D3B192616B1004E898B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D37192616B1004E898B /* main.m */; };
-		3FCD4D3C192616B1004E898B /* SecretSpice-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D38192616B1004E898B /* SecretSpice-Info.plist */; };
 		3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D3E192616BA004E898B /* SSPAppDelegate.m */; };
 		3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D42192616C2004E898B /* InfoPlist.strings */; };
 		3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D44192617C5004E898B /* Chat.storyboard */; };
@@ -29,6 +41,20 @@
 		3F83680C19262F1F00A60E18 /* SSPPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPlaceViewController.h; path = Controllers/SSPPlaceViewController.h; sourceTree = "<group>"; };
 		3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPlaceViewController.m; path = Controllers/SSPPlaceViewController.m; sourceTree = "<group>"; };
 		3F83680F19262FFA00A60E18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F8368121926351800A60E18 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = External/Parse.framework; sourceTree = "<group>"; };
+		3F8368141926354D00A60E18 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3F8368161926355400A60E18 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3F8368181926356000A60E18 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3F83681A1926356B00A60E18 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3F83681C1926357400A60E18 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3F83681E1926357C00A60E18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3F8368201926358300A60E18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3F8368221926358A00A60E18 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3F8368241926359100A60E18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3F836826192635A400A60E18 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		3F836828192635AF00A60E18 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3F83682A192635C300A60E18 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3F83682D1926362F00A60E18 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBMissingSymbols.m; path = Supporting/FBMissingSymbols.m; sourceTree = "<group>"; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8368301926366900A60E18 /* Social.framework in Frameworks */,
+				3F83682F1926366500A60E18 /* Accounts.framework in Frameworks */,
+				3F8368251926359100A60E18 /* SystemConfiguration.framework in Frameworks */,
+				3F8368231926358A00A60E18 /* StoreKit.framework in Frameworks */,
+				3F8368211926358300A60E18 /* Security.framework in Frameworks */,
+				3F83681F1926357C00A60E18 /* QuartzCore.framework in Frameworks */,
+				3F83681D1926357400A60E18 /* MobileCoreServices.framework in Frameworks */,
+				3F83681B1926356B00A60E18 /* libz.dylib in Frameworks */,
+				3F8368191926356000A60E18 /* CoreLocation.framework in Frameworks */,
+				3F8368171926355400A60E18 /* CFNetwork.framework in Frameworks */,
+				3F8368151926354D00A60E18 /* AudioToolbox.framework in Frameworks */,
+				3F8368131926351800A60E18 /* Parse.framework in Frameworks */,
 				3F83681019262FFA00A60E18 /* MapKit.framework in Frameworks */,
 				3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */,
 				3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */,
@@ -70,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F836811192634F700A60E18 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3F8368121926351800A60E18 /* Parse.framework */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 		3FCD4CFA19261674004E898B = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +137,18 @@
 		3FCD4D0519261674004E898B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F83682A192635C300A60E18 /* Accounts.framework */,
+				3F836828192635AF00A60E18 /* Social.framework */,
+				3F836826192635A400A60E18 /* Twitter.framework */,
+				3F8368241926359100A60E18 /* SystemConfiguration.framework */,
+				3F8368221926358A00A60E18 /* StoreKit.framework */,
+				3F8368201926358300A60E18 /* Security.framework */,
+				3F83681E1926357C00A60E18 /* QuartzCore.framework */,
+				3F83681C1926357400A60E18 /* MobileCoreServices.framework */,
+				3F83681A1926356B00A60E18 /* libz.dylib */,
+				3F8368181926356000A60E18 /* CoreLocation.framework */,
+				3F8368161926355400A60E18 /* CFNetwork.framework */,
+				3F8368141926354D00A60E18 /* AudioToolbox.framework */,
 				3F83680F19262FFA00A60E18 /* MapKit.framework */,
 				3FCD4D0619261674004E898B /* Foundation.framework */,
 				3FCD4D0819261674004E898B /* CoreGraphics.framework */,
@@ -106,6 +164,7 @@
 			children = (
 				3FCD4D3519261681004E898B /* Application */,
 				3FCD4D4919261CC4004E898B /* Controllers */,
+				3F836811192634F700A60E18 /* External */,
 				3FCD4D4D19261D89004E898B /* Managers */,
 				3FCD4D51192620E4004E898B /* Models */,
 				3FCD4D1819261674004E898B /* Images.xcassets */,
@@ -123,6 +182,7 @@
 				3FCD4D38192616B1004E898B /* SecretSpice-Info.plist */,
 				3FCD4D39192616B1004E898B /* SecretSpice-Prefix.pch */,
 				3FCD4D59192623F4004E898B /* Definitions.h */,
+				3F83682D1926362F00A60E18 /* FBMissingSymbols.m */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
@@ -227,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FCD4D3C192616B1004E898B /* SecretSpice-Info.plist in Resources */,
 				3FCD4D4719261807004E898B /* Main.storyboard in Resources */,
 				3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */,
 				3FCD4D1919261674004E898B /* Images.xcassets in Resources */,
@@ -276,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD4D5019261ED4004E898B /* SSPFoursquareAPIManager.m in Sources */,
+				3F83682E1926362F00A60E18 /* FBMissingSymbols.m in Sources */,
 				3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */,
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
 				3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */,
@@ -375,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SecretSpice/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
@@ -389,6 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SecretSpice/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
