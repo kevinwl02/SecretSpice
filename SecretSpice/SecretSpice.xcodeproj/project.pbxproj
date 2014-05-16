@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0B3E351926257A0034FCC0 /* SSPChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B3E341926257A0034FCC0 /* SSPChatViewController.m */; };
+		0B0B3E3919263FCB0034FCC0 /* SSPUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B3E3819263FCB0034FCC0 /* SSPUserStore.m */; };
+		0B0B3E3C192643B60034FCC0 /* SSPChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B3E3B192643B60034FCC0 /* SSPChatTableViewController.m */; };
+		0B0B3E40192644A50034FCC0 /* SSPConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B3E3F192644A50034FCC0 /* SSPConversation.m */; };
+		0BDC20FF19261FBE0040FC3F /* SSPMessagingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC20FE19261FBE0040FC3F /* SSPMessagingHelper.m */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
@@ -21,6 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0B3E331926257A0034FCC0 /* SSPChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPChatViewController.h; sourceTree = "<group>"; };
+		0B0B3E341926257A0034FCC0 /* SSPChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPChatViewController.m; sourceTree = "<group>"; };
+		0B0B3E3719263FCB0034FCC0 /* SSPUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPUserStore.h; sourceTree = "<group>"; };
+		0B0B3E3819263FCB0034FCC0 /* SSPUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPUserStore.m; sourceTree = "<group>"; };
+		0B0B3E3A192643B60034FCC0 /* SSPChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPChatTableViewController.h; sourceTree = "<group>"; };
+		0B0B3E3B192643B60034FCC0 /* SSPChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPChatTableViewController.m; sourceTree = "<group>"; };
+		0B0B3E3E192644A50034FCC0 /* SSPConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPConversation.h; sourceTree = "<group>"; };
+		0B0B3E3F192644A50034FCC0 /* SSPConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPConversation.m; sourceTree = "<group>"; };
+		0BDC20FD19261FBE0040FC3F /* SSPMessagingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPMessagingHelper.h; sourceTree = "<group>"; };
+		0BDC20FE19261FBE0040FC3F /* SSPMessagingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPMessagingHelper.m; sourceTree = "<group>"; };
+		0BDC2101192622BB0040FC3F /* SSPDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPDefinitions.h; sourceTree = "<group>"; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,6 +70,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0B3E3619263FB70034FCC0 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				0B0B3E3719263FCB0034FCC0 /* SSPUserStore.h */,
+				0B0B3E3819263FCB0034FCC0 /* SSPUserStore.m */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		0B0B3E3D192644940034FCC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B0B3E3E192644A50034FCC0 /* SSPConversation.h */,
+				0B0B3E3F192644A50034FCC0 /* SSPConversation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BDC20FB19261F750040FC3F /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				0BDC20FD19261FBE0040FC3F /* SSPMessagingHelper.h */,
+				0BDC20FE19261FBE0040FC3F /* SSPMessagingHelper.m */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		0BDC20FC19261F750040FC3F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B0B3E331926257A0034FCC0 /* SSPChatViewController.h */,
+				0B0B3E341926257A0034FCC0 /* SSPChatViewController.m */,
+				0B0B3E3A192643B60034FCC0 /* SSPChatTableViewController.h */,
+				0B0B3E3B192643B60034FCC0 /* SSPChatTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0BDC2100192622AB0040FC3F /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				0BDC2101192622BB0040FC3F /* SSPDefinitions.h */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		3FCD4CFA19261674004E898B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +149,11 @@
 		3FCD4D0C19261674004E898B /* SecretSpice */ = {
 			isa = PBXGroup;
 			children = (
+				0B0B3E3D192644940034FCC0 /* Models */,
+				0B0B3E3619263FB70034FCC0 /* Stores */,
+				0BDC2100192622AB0040FC3F /* Definitions */,
+				0BDC20FB19261F750040FC3F /* Messaging */,
+				0BDC20FC19261F750040FC3F /* ViewControllers */,
 				3FCD4D3519261681004E898B /* Application */,
 				3FCD4D1819261674004E898B /* Images.xcassets */,
 				3FCD4D0D19261674004E898B /* Supporting */,
@@ -226,7 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
+				0BDC20FF19261FBE0040FC3F /* SSPMessagingHelper.m in Sources */,
+				0B0B3E3919263FCB0034FCC0 /* SSPUserStore.m in Sources */,
+				0B0B3E40192644A50034FCC0 /* SSPConversation.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
+				0B0B3E3C192643B60034FCC0 /* SSPChatTableViewController.m in Sources */,
+				0B0B3E351926257A0034FCC0 /* SSPChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
