@@ -27,6 +27,21 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self performSelector:@selector(enableSearch)
+               withObject:nil
+               afterDelay:1.0f];
+}
+
+- (void)enableSearch
+{
+    [self.searchDisplayController setActive:YES
+                                   animated:YES];
+    [self.searchDisplayController.searchBar becomeFirstResponder];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"PlaceSegue"]) {

@@ -24,6 +24,8 @@
 		3F8368301926366900A60E18 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F836828192635AF00A60E18 /* Social.framework */; };
 		3F836833192638BE00A60E18 /* SSPCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F836832192638BE00A60E18 /* SSPCheckInViewController.m */; };
 		3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */; };
+		3F8368391926481C00A60E18 /* SSPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8368381926481C00A60E18 /* SSPPerson.m */; };
+		3F83683C1926493D00A60E18 /* SSPPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83683B1926493D00A60E18 /* SSPPeopleViewController.m */; };
 		3FCD4D0719261674004E898B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0619261674004E898B /* Foundation.framework */; };
 		3FCD4D0919261674004E898B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0819261674004E898B /* CoreGraphics.framework */; };
 		3FCD4D0B19261674004E898B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD4D0A19261674004E898B /* UIKit.framework */; };
@@ -61,6 +63,10 @@
 		3F836832192638BE00A60E18 /* SSPCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPCheckInViewController.m; path = Controllers/SSPCheckInViewController.m; sourceTree = "<group>"; };
 		3F8368341926392900A60E18 /* SSPSecretSpiceAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPSecretSpiceAPIManager.h; path = Managers/SSPSecretSpiceAPIManager.h; sourceTree = "<group>"; };
 		3F8368351926392900A60E18 /* SSPSecretSpiceAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPSecretSpiceAPIManager.m; path = Managers/SSPSecretSpiceAPIManager.m; sourceTree = "<group>"; };
+		3F8368371926481C00A60E18 /* SSPPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPerson.h; path = Models/SSPPerson.h; sourceTree = "<group>"; };
+		3F8368381926481C00A60E18 /* SSPPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPerson.m; path = Models/SSPPerson.m; sourceTree = "<group>"; };
+		3F83683A1926493D00A60E18 /* SSPPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPPeopleViewController.h; path = Controllers/SSPPeopleViewController.h; sourceTree = "<group>"; };
+		3F83683B1926493D00A60E18 /* SSPPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPPeopleViewController.m; path = Controllers/SSPPeopleViewController.m; sourceTree = "<group>"; };
 		3FCD4D0319261674004E898B /* SecretSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD4D0619261674004E898B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FCD4D0819261674004E898B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -220,6 +226,8 @@
 				3F83680D19262F1F00A60E18 /* SSPPlaceViewController.m */,
 				3F836831192638BE00A60E18 /* SSPCheckInViewController.h */,
 				3F836832192638BE00A60E18 /* SSPCheckInViewController.m */,
+				3F83683A1926493D00A60E18 /* SSPPeopleViewController.h */,
+				3F83683B1926493D00A60E18 /* SSPPeopleViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +248,8 @@
 			children = (
 				3FCD4D5219262103004E898B /* SSPPlace.h */,
 				3FCD4D5319262103004E898B /* SSPPlace.m */,
+				3F8368371926481C00A60E18 /* SSPPerson.h */,
+				3F8368381926481C00A60E18 /* SSPPerson.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -348,9 +358,11 @@
 				3F83682E1926362F00A60E18 /* FBMissingSymbols.m in Sources */,
 				3FCD4D4C19261CEC004E898B /* SSPSearchPlacesViewController.m in Sources */,
 				3FCD4D3F192616BA004E898B /* SSPAppDelegate.m in Sources */,
+				3F83683C1926493D00A60E18 /* SSPPeopleViewController.m in Sources */,
 				3F83680E19262F1F00A60E18 /* SSPPlaceViewController.m in Sources */,
 				3FCD4D3B192616B1004E898B /* main.m in Sources */,
 				3F8368361926392900A60E18 /* SSPSecretSpiceAPIManager.m in Sources */,
+				3F8368391926481C00A60E18 /* SSPPerson.m in Sources */,
 				3FCD4D5419262103004E898B /* SSPPlace.m in Sources */,
 				3F836833192638BE00A60E18 /* SSPCheckInViewController.m in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 #import "SSPSecretSpiceAPIManager.h"
+#import "SSPPerson.h"
+#import "SSPPlace.h"
 
 @implementation SSPSecretSpiceAPIManager
 
@@ -34,6 +36,26 @@
     activeSession[@"checkInType"] = [NSNumber numberWithInt:checkInType];
     [activeSession saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         completionBlock(succeeded, error);
+    }];
+}
+
+- (void)getPeopleWithPlace:(SSPPlace *)place
+                completion:(ArrayCompletionBlock)completionBlock
+{
+    /*
+     TODO: Send place information to service.
+     */
+    PFQuery *query = [PFQuery queryWithClassName:@"ActiveSession"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSMutableArray *people = [NSMutableArray array];
+            for (PFObject *parseObject in objects) {
+                [people addObject:[SSPPerson personWithParseObject:parseObject]];
+            }
+            completionBlock([people copy], nil);
+        } else {
+            completionBlock(nil, error);
+        }
     }];
 }
 

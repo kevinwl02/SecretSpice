@@ -92,7 +92,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Place" id="0Cq-tZ-4s5">
-                        <barButtonItem key="rightBarButtonItem" title="People" id="83F-EQ-YMZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="People" id="83F-EQ-YMZ">
+                            <connections>
+                                <segue destination="8cF-Ys-ZDe" kind="push" id="afp-Mm-yAl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="anz-UT-yf4" id="axm-Fj-wM7"/>
@@ -101,6 +105,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vc5-Ix-aVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2031" y="814"/>
+        </scene>
+        <!--People View Controller - People-->
+        <scene sceneID="onw-lv-wih">
+            <objects>
+                <tableViewController id="8cF-Ys-ZDe" customClass="SSPPeopleViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="m3u-gu-7hq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonCell" textLabel="BWc-Qy-gRA" style="IBUITableViewCellStyleDefault" id="1hb-mG-0RN">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hb-mG-0RN" id="MIM-wh-pO2">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Renzo Crisóstomo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BWc-Qy-gRA">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8cF-Ys-ZDe" id="ccp-ld-BlN"/>
+                            <outlet property="delegate" destination="8cF-Ys-ZDe" id="PTl-HO-tYa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="People" id="Ttp-Nr-gYH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQG-V9-jwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488" y="814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7BQ-V0-pvj">
@@ -154,6 +196,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Secret Spice" id="53t-TY-T8B">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ogf-Iv-SFD"/>
                         <barButtonItem key="leftBarButtonItem" title="Chats" id="Wr8-XS-ZPw"/>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="XAK-rm-zeb">
                             <connections>

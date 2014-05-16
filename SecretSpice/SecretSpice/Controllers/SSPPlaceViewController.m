@@ -25,7 +25,10 @@
     [annotation setTitle:self.place.name];
     [annotation setSubtitle:self.place.address];
     [self.mapView addAnnotation:annotation];
-    [self.mapView setRegion:MKCoordinateRegionMake(location, MKCoordinateSpanMake(0.5f, 0.5f))];
+    [self.mapView setRegion:MKCoordinateRegionMake(location, MKCoordinateSpanMake(0.05f, 0.05f))];
+    id<MKAnnotation> currentAnnotation = self.mapView.annotations[0];
+    [self.mapView selectAnnotation:currentAnnotation
+                          animated:YES];
 }
 
 @end
