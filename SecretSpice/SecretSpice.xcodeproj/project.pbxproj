@@ -15,6 +15,8 @@
 		3FCD4D3C192616B1004E898B /* SecretSpice-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D38192616B1004E898B /* SecretSpice-Info.plist */; };
 		3FCD4D3F192616BA004E898B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD4D3E192616BA004E898B /* AppDelegate.m */; };
 		3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D42192616C2004E898B /* InfoPlist.strings */; };
+		3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D44192617C5004E898B /* Chat.storyboard */; };
+		3FCD4D4719261807004E898B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD4D4619261807004E898B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3FCD4D3D192616BA004E898B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Application/AppDelegate.h; sourceTree = "<group>"; };
 		3FCD4D3E192616BA004E898B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Application/AppDelegate.m; sourceTree = "<group>"; };
 		3FCD4D41192616C2004E898B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FCD4D44192617C5004E898B /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Chat.storyboard; path = View/Chat.storyboard; sourceTree = "<group>"; };
+		3FCD4D4619261807004E898B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				3FCD4D3519261681004E898B /* Application */,
 				3FCD4D1819261674004E898B /* Images.xcassets */,
 				3FCD4D0D19261674004E898B /* Supporting */,
+				3FCD4D43192617A8004E898B /* View */,
 			);
 			path = SecretSpice;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 				3FCD4D3E192616BA004E898B /* AppDelegate.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		3FCD4D43192617A8004E898B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD4D4619261807004E898B /* Main.storyboard */,
+				3FCD4D44192617C5004E898B /* Chat.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD4D3C192616B1004E898B /* SecretSpice-Info.plist in Resources */,
+				3FCD4D4719261807004E898B /* Main.storyboard in Resources */,
+				3FCD4D45192617C5004E898B /* Chat.storyboard in Resources */,
 				3FCD4D1919261674004E898B /* Images.xcassets in Resources */,
 				3FCD4D40192616C2004E898B /* InfoPlist.strings in Resources */,
 			);
@@ -264,8 +280,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SecretSpice/SecretSpice-Prefix.pch";
-				INFOPLIST_FILE = "SecretSpice/SecretSpice-Info.plist";
+				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,8 +293,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SecretSpice/SecretSpice-Prefix.pch";
-				INFOPLIST_FILE = "SecretSpice/SecretSpice-Info.plist";
+				GCC_PREFIX_HEADER = "SecretSpice/Supporting/SecretSpice-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SecretSpice/Supporting/SecretSpice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
